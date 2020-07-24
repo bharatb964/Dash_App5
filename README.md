@@ -14,6 +14,7 @@ Heroku Link: https://dash-application.herokuapp.com/
     2. Prev. Month Load count is taken as the sum of all the load counts of previous month for selected batch.
     3. Prev. Month Load time is not avialable in the ld_info file so its blank for all batches.
     4. if the data is blank, it means its not found in the datasets.
+    5. In 2nd plot the End time is taken as hour at which job is completed.
 
 ![image](Annotation.png)
 
