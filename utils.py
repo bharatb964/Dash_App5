@@ -27,7 +27,7 @@ def get_fig1(df,x,y,x_title=' ',y_title=' ',tt=' '):
             plot_bgcolor=app_color["graph_bg"],
             paper_bgcolor=app_color["graph_bg"],
             font={"color": "white"},
-            #height=200,
+            height=300,
             xaxis={
                 "showline": True,
                 "zeroline": False,
@@ -112,15 +112,14 @@ def tb_color(df):
         row_selectable="single",
         selected_columns=[],
         selected_rows=[],
+        style_as_list_view=True,
     style_cell = {
         'fontFamily':'Open Sans',
         'textAlign':'left',
         'width':'150px',
         'minWidth':'180px',
         'maxWidth':'180px',
-        'whiteSpace':'no-wrap',
-        'overflow':'hidden',
-        'textOverflow':'ellipsis'},
+        'whiteSpace':'no-wrap'},
 
     style_data_conditional=[
         {'if': {'filter_query': '{LD_STS} eq "STARTED"'},
@@ -137,6 +136,7 @@ def tb_out(dfa):
     columns=[
         {"name": i, "id": i } for i in dfa.columns
     ],
+    style_as_list_view=True,
     style_header={
     'backgroundColor': '#082255',
     'color':'white',
@@ -147,11 +147,14 @@ def tb_out(dfa):
     'whiteSpace':'normal',
     'height':'auto'
 },
+
     fixed_rows={'headers': True, 'data': 0},
     style_cell = {
         'backgroundColor': '#082255',
         'color':'white',
         'fontFamily':'Open Sans',
+        'font_size':'18px',
+        'height':'70px',
         'textAlign':'left',
         'width':'100px',
         'textOverflow':'ellipsis'},

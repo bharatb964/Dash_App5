@@ -1,4 +1,5 @@
 /* Table of contents
+
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Banner
 - Grid
@@ -513,20 +514,23 @@ body, h1, h2, h3, h4, h5, h6, p {
 
   #map-graph {
     -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column: 1 / span 7;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / span 12;
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3 / 4;
+    margin-top:1%;
+    margin-bottom:1%
   }
 
   #histo-graph {
-    -ms-grid-column: 8;
-    -ms-grid-column-span: 5;
-    grid-column: 8 / span 5;
-    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / span 12;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 2;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
+    margin-bottom:4%
   }
 
   #leads_table {
@@ -560,9 +564,11 @@ body, h1, h2, h3, h4, h5, h6, p {
 .dash-spreadsheet.dash-freeze-left {
     max-width: none !important;
 }
+
 .table {
-  overflow: scroll;
+  overflow: auto;
 }
+
 .six_columns {
 background-color: #061E44;
 color: white;
